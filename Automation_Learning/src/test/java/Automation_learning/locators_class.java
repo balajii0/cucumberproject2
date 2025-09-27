@@ -1,5 +1,7 @@
 package Automation_learning;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,27 +38,38 @@ public class locators_class {
 
 		// System.out.println(buttton);
 
-		
-		  WebElement username = driver.findElement(By.name("username"));
-		  
-		  username.sendKeys("student1234567890-"); Thread.sleep(1000);
-		  
-		  username.clear(); username.sendKeys("student"); WebElement password =
-		  driver.findElement(By.id("password")); password.sendKeys("Password123");
-		  
-		  WebElement submit = driver.findElement(By.id("submit")); submit.click();
-		  
-		  String text = driver.findElement(By.className("post-title")).getText();
-		  System.out.println(text);
+		WebElement username = driver.findElement(By.name("username"));
 
-		  WebElement Link = driver.findElement(By.tagName("a")); 
-		  String href =  Link.getAttribute("href"); 
-		  System.out.println(href);
-		  
-		  if (text.equals("Logd In Successfully")) { System.out.println("Pass"); } else
-		  { System.out.println("Fail"); }
-		  
-		 
+		username.sendKeys("student1234567890-");
+		Thread.sleep(1000);
+
+		username.clear();
+		username.sendKeys("student");
+		WebElement password = driver.findElement(By.id("password"));
+		password.sendKeys("Password123");
+
+		WebElement submit = driver.findElement(By.id("submit"));
+		submit.click();
+
+		String text = driver.findElement(By.className("post-title")).getText();
+		System.out.println(text);
+
+		List<WebElement> inputs = driver.findElements(By.xpath("//*[@id=\"login\"]/h2"));
+
+		for (WebElement input : inputs) {
+			System.out.println("Input field name: " + input.getAttribute("name"));
+		}
+
+		WebElement Link = driver.findElement(By.tagName("a"));
+		String href = Link.getAttribute("href");
+		System.out.println(href);
+
+		if (text.equals("Logd In Successfully")) {
+			System.out.println("Pass");
+		} else {
+			System.out.println("Fail");
+		}
+
 	}
 
 }

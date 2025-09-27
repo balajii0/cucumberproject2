@@ -1,11 +1,13 @@
 package cucumberproject;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -44,6 +46,15 @@ public class loginstepdefination {
 	public void user_should_land_on_home_page() {
 		System.out.println("Login successful");
 		// driver.close();
+	}
+
+	@When("user enters credientails using Datatable")
+	public void user_enters_credientails_using_datatable(DataTable datatable) {
+		System.out.println("step2 : User enters username and pswd");
+		List<List<String>> data = datatable.cells();
+		driver.findElement(By.name("username")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.name("password")).sendKeys(data.get(0).get(1));
+		System.out.println("details entered");
 	}
 
 }
