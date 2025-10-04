@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="22.625" tests="4" skipped="0" failures="0" errors="0">
-<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.1" time="5.946">
+<testsuite name="Cucumber" time="19.244" tests="9" skipped="0" failures="6" errors="0">
+<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.1" time="7.623">
 <system-out><![CDATA[
 Given user is on loginpage..................................................passed
 When user enters admin and admin123.........................................passed
@@ -8,7 +8,7 @@ And click on login button...................................................pass
 Then user should land on home page..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.2" time="5.422">
+<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.2" time="5.263">
 <system-out><![CDATA[
 Given user is on loginpage..................................................passed
 When user enters balaji and balaji123.......................................passed
@@ -16,20 +16,48 @@ And click on login button...................................................pass
 Then user should land on home page..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.1" time="5.628">
+<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login using Datatable" time="5.874">
 <system-out><![CDATA[
 Given user is on loginpage..................................................passed
-When user enters admin and admin123.........................................passed
+When user enters credientails using Datatable...............................passed
 And click on login button...................................................passed
 Then user should land on home page..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test the login functionality of OrangeHRM" name="Test the valid login - Example #1.2" time="5.436">
+<testcase classname="Using of tags in cucumber" name="Scenario1" time="0.025">
+<failure/>
 <system-out><![CDATA[
-Given user is on loginpage..................................................passed
-When user enters balaji and balaji123.......................................passed
-And click on login button...................................................passed
-Then user should land on home page..........................................passed
+Given this is Scenario1.....................................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Using of tags in cucumber" name="Scenario2" time="0.005">
+<failure/>
+<system-out><![CDATA[
+Given this is Scenario2.....................................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Using of tags in cucumber" name="Scenario3" time="0.003">
+<failure/>
+<system-out><![CDATA[
+Given this is Scenario3.....................................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Using of tags in cucumber" name="Scenario4" time="0.005">
+<failure/>
+<system-out><![CDATA[
+Given this is Scenario4.....................................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Using of tags in cucumber" name="Scenario5" time="0.023">
+<failure/>
+<system-out><![CDATA[
+Given this is Scenario5.....................................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Using of tags in cucumber" name="Scenario6" time="0.007">
+<failure/>
+<system-out><![CDATA[
+Given this is Scenario6.....................................................undefined
 ]]></system-out>
 </testcase>
 </testsuite>
