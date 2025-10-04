@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		"pretty", "html:Reports/HTMLReports", "json:Reports/JSONReports/report.json",
 		"junit:Reports/JUnitReports/report.xml" },
 
-		dryRun = false // now it will run scenarios and generate reports
-)
+		dryRun = false, // now it will run scenarios and generate reports
+		tags = "@smoketest and not @sanitytest")
 public class runnerclass {
 }

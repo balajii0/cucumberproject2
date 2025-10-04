@@ -8,6 +8,8 @@ Given this is Scenario1
 Scenario: Scenario2
 Given this is Scenario2
 
+@sanitytest
+@smoketest
 Scenario: Scenario3
 Given this is Scenario3
 
