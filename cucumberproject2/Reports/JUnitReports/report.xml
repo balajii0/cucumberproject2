@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.22" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Using of tags in cucumber" name="Scenario1" time="0.021">
+<testsuite name="Cucumber" time="0.354" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Using of tags in cucumber" name="Scenario1" time="0.046">
 <system-out><![CDATA[
 Given this is Scenario1.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Using of tags in cucumber" name="Scenario2" time="0.002">
+<testcase classname="Using of tags in cucumber" name="Scenario2" time="0.004">
 <system-out><![CDATA[
 Given this is Scenario2.....................................................passed
 ]]></system-out>
